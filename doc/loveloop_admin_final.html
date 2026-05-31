@@ -10,14 +10,14 @@
   --font:"Pretendard Variable",Pretendard,-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
   --mono:ui-monospace,"SF Mono","Cascadia Code",Menlo,monospace;
   /* cyber dark base (사용자웹 v4 공유) — 단, 도구용으로 명도 살짝 상향 */
-  --bg0:#05060c; --bg1:#0a0d18; --bg2:#0e1322; --bg3:#141a2e; --bg4:#1a2238;
+  --bg0:#05060c; --bg1:#0a0d18; --bg2:#0e1322; --bg3:#1a2238; --bg4:#1a2238;
   --canvas:#080b14;
   --color-primary:#3df2e0;        /* 시안 = 주 액센트 */
   --primary-soft:rgba(61,242,224,.1); --primary-b:rgba(61,242,224,.32);
   --violet:#8b6dff; --violet-soft:rgba(139,109,255,.12); --violet-b:rgba(139,109,255,.32);
-  --surface:#0e1322; --surface2:#141a2e; --surface3:#1a2238;
-  --line:rgba(120,160,255,.1); --line2:rgba(120,160,255,.18);
-  --ink:#e8ecff; --t2:#9aa3c7; --t3:#5f6788; --t4:#454d6e;
+  --surface:#141b2e; --surface2:#1a2238; --surface3:#222b45;
+  --line:rgba(140,175,255,.2); --line2:rgba(140,175,255,.32);
+  --ink:#f4f6ff; --t2:#c3c9e6; --t3:#8b93ba; --t4:#6b7399;
   --green:#3bdc8e; --green-soft:rgba(59,220,142,.1); --green-b:rgba(59,220,142,.32);
   --warn:#ffb347; --warn-soft:rgba(255,179,71,.1); --warn-b:rgba(255,179,71,.32);
   --red:#ff5d7e; --red-soft:rgba(255,93,126,.1); --red-b:rgba(255,93,126,.32);
@@ -65,7 +65,7 @@ input,select,textarea{font-family:inherit;outline:none}
 .sb-grp:first-child{padding-top:2px}
 .sb-item{display:flex;align-items:center;gap:11px;padding:9px 12px;border-radius:11px;cursor:pointer;
   font-size:13px;color:var(--t2);border-left:2px solid transparent;transition:all var(--dur) var(--ease)}
-.sb-item:hover{color:var(--ink);background:rgba(120,160,255,.05)}
+.sb-item:hover{color:var(--ink);background:rgba(140,175,255,.08)}
 .sb-item.on{color:var(--color-primary);background:var(--primary-soft);border-left-color:var(--color-primary);font-weight:600}
 .sb-item .si{font-size:15px;width:18px;text-align:center}
 .sb-badge{margin-left:auto;font-size:9px;font-weight:700;padding:1px 6px;border-radius:8px;font-family:var(--mono);
@@ -115,7 +115,7 @@ input,select,textarea{font-family:inherit;outline:none}
   padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
 .tbl td{padding:11px 12px;border-bottom:1px solid var(--line);color:var(--t2);vertical-align:middle}
 .tbl tr:last-child td{border-bottom:none}
-.tbl tr:hover td{background:rgba(120,160,255,.04)}
+.tbl tr:hover td{background:rgba(140,175,255,.07)}
 .tbl td.mono,.mono{font-family:var(--mono);font-size:11.5px}
 .tag{display:inline-flex;align-items:center;font-size:10.5px;font-weight:600;padding:2px 8px;border-radius:7px}
 .tag.green{background:var(--green-soft);color:var(--green);border:1px solid var(--green-b)}
