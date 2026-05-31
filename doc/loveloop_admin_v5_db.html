@@ -258,11 +258,11 @@ input,select,textarea{font-family:inherit;outline:none}
           <table class="tbl">
             <thead><tr><th>코드</th><th>이름</th><th>관계 스타일</th><th>톤 가드레일</th><th>상태</th><th></th></tr></thead>
             <tbody id="persona-tbody">
-              <tr><td class="mono">P1</td><td>서도진</td><td>든든한 조력형</td><td><span class="tag green">통과</span></td><td><span class="tag blue">운영중</span></td><td><button class="btn sm">검수</button></td></tr>
-              <tr><td class="mono">P2</td><td>연하진</td><td>밝은 응원형</td><td><span class="tag green">통과</span></td><td><span class="tag blue">운영중</span></td><td><button class="btn sm">검수</button></td></tr>
-              <tr><td class="mono">P3</td><td>에단 켄트</td><td>차분한 신뢰형</td><td><span class="tag green">통과</span></td><td><span class="tag blue">운영중</span></td><td><button class="btn sm">검수</button></td></tr>
-              <tr><td class="mono">P4</td><td>제이</td><td>솔직 담백형</td><td><span class="tag green">통과</span></td><td><span class="tag blue">운영중</span></td><td><button class="btn sm">검수</button></td></tr>
-              <tr><td class="mono">P5</td><td>최윤재</td><td>편안한 친구형</td><td><span class="tag green">통과</span></td><td><span class="tag blue">운영중</span></td><td><button class="btn sm">검수</button></td></tr>
+              <tr><td class="mono">P1</td><td>서도진</td><td>든든한 조력형</td><td><span class="tag green">통과</span></td><td><span class="tag blue">운영중</span></td><td><button class="btn sm" onclick="toast('페르소나 톤 검수 — 가드레일 리포트를 확인합니다')">검수</button></td></tr>
+              <tr><td class="mono">P2</td><td>연하진</td><td>밝은 응원형</td><td><span class="tag green">통과</span></td><td><span class="tag blue">운영중</span></td><td><button class="btn sm" onclick="toast('페르소나 톤 검수 — 가드레일 리포트를 확인합니다')">검수</button></td></tr>
+              <tr><td class="mono">P3</td><td>에단 켄트</td><td>차분한 신뢰형</td><td><span class="tag green">통과</span></td><td><span class="tag blue">운영중</span></td><td><button class="btn sm" onclick="toast('페르소나 톤 검수 — 가드레일 리포트를 확인합니다')">검수</button></td></tr>
+              <tr><td class="mono">P4</td><td>제이</td><td>솔직 담백형</td><td><span class="tag green">통과</span></td><td><span class="tag blue">운영중</span></td><td><button class="btn sm" onclick="toast('페르소나 톤 검수 — 가드레일 리포트를 확인합니다')">검수</button></td></tr>
+              <tr><td class="mono">P5</td><td>최윤재</td><td>편안한 친구형</td><td><span class="tag green">통과</span></td><td><span class="tag blue">운영중</span></td><td><button class="btn sm" onclick="toast('페르소나 톤 검수 — 가드레일 리포트를 확인합니다')">검수</button></td></tr>
             </tbody>
           </table>
         </div>
@@ -418,7 +418,7 @@ input,select,textarea{font-family:inherit;outline:none}
           <div class="set-row"><div><div class="set-l">신고 접수 알림</div></div><button class="tog on" onclick="this.classList.toggle('on')"></button></div>
           <div class="set-row"><div><div class="set-l">가드레일 임계 초과 알림</div></div><button class="tog on" onclick="this.classList.toggle('on')"></button></div>
           <div class="set-row"><div><div class="set-l">웰빙 과몰입 코호트 급증 알림</div></div><button class="tog on" onclick="this.classList.toggle('on')"></button></div>
-          <div style="margin-top:16px;display:flex;justify-content:flex-end;gap:8px"><button class="btn">초기화</button><button class="btn primary" onclick="toast('설정이 저장되었습니다')">저장</button></div>
+          <div style="margin-top:16px;display:flex;justify-content:flex-end;gap:8px"><button class="btn" onclick="toast('설정을 기본값으로 초기화했습니다')">초기화</button><button class="btn primary" onclick="toast('설정이 저장되었습니다')">저장</button></div>
         </div>
       </div>
 
@@ -431,13 +431,13 @@ input,select,textarea{font-family:inherit;outline:none}
 <script>
 const meta={
   dash:["대시보드","운영 현황 한눈에 보기 · 2026-05-31 기준",""],
-  content:["콘텐츠·페르소나","페르소나 톤 검수 및 콘텐츠 관리",'<button class="btn primary">+ 콘텐츠 등록</button>'],
+  content:["콘텐츠·페르소나","페르소나 톤 검수 및 콘텐츠 관리",'<button class="btn primary" onclick="toast(\'콘텐츠 등록 폼이 열립니다\')">+ 콘텐츠 등록</button>'],
   safety:["안전 가드레일","통제·집착 표현 차단 사전 및 할루시네이션 가드",""],
-  wellbeing:["웰빙 운영","과몰입 모니터링 및 휴식 넛지 정책",'<button class="btn">리포트 내보내기</button>'],
+  wellbeing:["웰빙 운영","과몰입 모니터링 및 휴식 넛지 정책",'<button class="btn" onclick="toast(\'웰빙 리포트를 내보냈습니다\')">리포트 내보내기</button>'],
   darkpattern:["다크패턴 감사","과금 UX 점검 — 실패 항목은 배포 전 차단",'<button class="btn primary" onclick="toast(\'재점검을 실행합니다\')">재점검 실행</button>'],
   billing:["결제·환불","가치 기반 결제 운영 및 환불 처리",""],
   reports:["신고·검토","신고 큐 검토 — 영구 삭제는 별도 승인",""],
-  users:["사용자·권한","관리자 계정 및 미성년 보호 설정",'<button class="btn primary">+ 관리자 추가</button>'],
+  users:["사용자·권한","관리자 계정 및 미성년 보호 설정",'<button class="btn primary" onclick="toast(\'관리자 초대 폼이 열립니다\')">+ 관리자 추가</button>'],
   sysset:["시스템 설정","LLM·음성·가드레일·알림 설정",""],
 };
 function go(v){
@@ -478,7 +478,7 @@ async function loadAdmin(){
     if(p.personas&&tb)tb.innerHTML=p.personas.map(r=>
       `<tr><td class="mono">${r.id}</td><td>${r.name}</td><td>${r.style_label}</td>
        <td><span class="tag green">통과</span></td><td><span class="tag blue">운영중</span></td>
-       <td><button class="btn sm">검수</button></td></tr>`).join('');
+       <td><button class="btn sm" onclick="toast('페르소나 톤 검수 — 가드레일 리포트를 확인합니다')">검수</button></td></tr>`).join('');
   }catch(e){console.warn('personas API 사용 불가',e);}
 
   // 다크패턴 감사 체크리스트
